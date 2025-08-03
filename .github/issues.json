@@ -1,0 +1,55 @@
+[
+  {
+    "service": "Document/KYC Service",
+    "issues": [
+      {
+        "task": "Upload PAN/Aadhar, etc.",
+        "description": "Allow users to upload documents for KYC verification.",
+        "labels": [
+          "kyc",
+          "upload"
+        ]
+      },
+      {
+        "task": "Link documents to user",
+        "description": "Link uploaded documents in DB with user records.",
+        "labels": [
+          "kyc",
+          "database"
+        ]
+      },
+      {
+        "task": "Status: uploaded, verified, rejected",
+        "description": "Track document status via enumeration.",
+        "labels": [
+          "kyc",
+          "status"
+        ]
+      },
+      {
+        "task": "Emit KYCCompleted event",
+        "description": "Emit event when all documents are verified.",
+        "labels": [
+          "kyc",
+          "event"
+        ]
+      },
+      {
+        "task": "Store metadata (type, date, user)",
+        "description": "Store document metadata for auditing.",
+        "labels": [
+          "kyc",
+          "metadata"
+        ]
+      },
+      {
+        "task": "Soft-delete document records",
+        "description": "Support GDPR-compliant soft deletion.",
+        "labels": [
+          "kyc",
+          "compliance"
+        ]
+      }
+    ]
+  }
+]
